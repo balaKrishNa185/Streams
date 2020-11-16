@@ -36,5 +36,10 @@ public class Ex8 {
         List<String> a4=
                 mobiles.stream().map(Mobile::getName).sorted(c).collect(Collectors.toList());
         System.out.println(a4);
+
+
+        List<Integer> a5=
+                mobiles.stream().map(Mobile::getId).sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+        System.out.println(a5);
     }
 }

@@ -8,7 +8,7 @@ public class Ex5 {
 
         List<String> as= Arrays.asList("adff","dff","dsffffffffffff","Df","","");
 
-    Long a=   as.stream()
+    Long a= as.stream()
                 .filter(n->n.length()>1)
                 .count();
         System.out.println(a);

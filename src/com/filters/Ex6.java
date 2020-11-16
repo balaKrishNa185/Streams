@@ -11,7 +11,7 @@ public class Ex6 {
         List<String> as= Arrays.asList("usa","india","uk","america");
        String s= as.stream()
                 .map(e->e.toUpperCase())
-                .collect(Collectors.joining(","));
+                .collect(Collectors.joining("|"));
 
         System.out.println(s);
 

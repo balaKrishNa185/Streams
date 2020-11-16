@@ -1,6 +1,7 @@
 package com.streams;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -18,7 +19,7 @@ public class Ex3 {
         System.out.println(nos);
 
 
-        List<Integer> sort=marks.stream().sorted().collect(Collectors.toList());
+        List<Integer> sort=marks.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
         System.out.println(sort);
     }
 }
